@@ -1,0 +1,13 @@
+{
+  "github_username": "rohitmali9860-web",
+  "repo_name": "daily-python-practice",
+  "repo_path": "C:\\Users\\Rohit\\daily-python-practice",
+  "remote_url_https": "https://github.com/rohitmali9860-web/AI-project.git",
+  "remote_url_ssh": "git@github.com:rohitmali9860-web/AI-project.git",
+  "preferred_auth": "HTTPS",
+  "branch": "main",
+  "auto_push": true,
+  "commit_prefix": "Day",
+  "author_name": "rohitmali9860-web",
+  "author_email": ""
+}
