@@ -55,3 +55,4 @@ Or double-click `run_daily.bat`.
 | Day | Date | Category | Challenge | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | [Day 001](day001/) | 2026-08-16 | GS1 / Barcode Utilities | EAN-13 & UPC-A Check Digit Calculator | 🟡 Scaffolded |
+| [Day 002](day 002/) | 2026-08-16 | OOP Practice | Bank Account & Transaction Engine (OOP) | 🟡 Scaffolded |
