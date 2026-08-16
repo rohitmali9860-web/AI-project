@@ -34,3 +34,4 @@ fatal: repository 'https://github.com/rohitmali9860-web/daily-python-practice.gi
 [2026-08-16 18:06:14] [INFO] docs: update practice progress index with verified days
 [2026-08-16 18:06:14] [INFO] log: sync session audit log and timestamps
 [2026-08-16 18:06:15] [INFO] ci: add test runner verification hooks
+[2026-08-16 18:06:15] [INFO] docs: update setup and troubleshooting walkthrough notes
