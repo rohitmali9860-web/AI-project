@@ -393,7 +393,7 @@ def main():
         ok_push, out_push = run_git_command(["push", "-u", "origin", branch], repo_dir, logger)
 
         if ok_push:
-            logger.info(f"✅ SUCCESS: Pushed {day_str} (Dark Green tier) to origin/{branch} successfully.")
+            logger.info(f"[SUCCESS] Pushed {day_str} (Dark Green tier) to origin/{branch} successfully.")
         else:
             logger.warning(
                 f"NOTICE: Commits saved locally, push notice: {out_push}. "
