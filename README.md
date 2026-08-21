@@ -61,3 +61,4 @@ Or double-click `run_daily.bat`.
 | [Day 005](day005/) | 2026-08-19 | File & Data Handling | Atomic Safe File Writer & Backup Manager | 🟡 Scaffolded |
 | [Day 006](day006/) | 2026-08-20 | Algorithms & Data Structures | LRU (Least Recently Used) Cache Implementation | 🟡 Scaffolded |
 | [Day 007](day007/) | 2026-08-21 | GS1 / Barcode Utilities | Code 128 Modulo-103 Checksum Calculator | 🟡 Scaffolded |
+| [Day 008](day008/) | 2026-08-22 | Algorithms & Data Structures | Trie (Prefix Tree) for Fast Autocomplete | 🟡 Scaffolded |
