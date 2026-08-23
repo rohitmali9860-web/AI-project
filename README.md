@@ -63,3 +63,4 @@ Or double-click `run_daily.bat`.
 | [Day 007](day007/) | 2026-08-21 | GS1 / Barcode Utilities | Code 128 Modulo-103 Checksum Calculator | 🟡 Scaffolded |
 | [Day 008](day008/) | 2026-08-22 | Algorithms & Data Structures | Trie (Prefix Tree) for Fast Autocomplete | 🟡 Scaffolded |
 | [Day 009](day009/) | 2026-08-23 | GS1 / Barcode Utilities | EAN-13 & UPC-A Check Digit Calculator | 🟡 Scaffolded |
+| [Day 010](day010/) | 2026-08-24 | OOP Practice | Bank Account & Transaction Engine (OOP) | 🟡 Scaffolded |
