@@ -223,16 +223,46 @@ def execute_multi_commit_flow(
     date_str: str,
     repo_dir: Path,
     config: dict,
-    logger: logging.Logger
+    logger: logging.Logger,
+    target_commits: int = 11
 ):
     """
-    Scaffolds the day and creates 10-12 granular, meaningful Git commits
-    so GitHub receives 10+ commits to display the DARK GREEN square.
+    Scaffolds the day and creates the requested number of Git commits (e.g. 2 for small run, or 10-12 for dark green).
     """
     day_tag = f"day{day_num:03d}"
     day_title = f"Day {day_num:03d}"
     day_dir = repo_dir / day_tag
     day_dir.mkdir(parents=True, exist_ok=True)
+
+    if target_commits == 2:
+        # Small 2-commit flow
+        # 1. First commit: scaffold all day files
+        (day_dir / "README.md").write_text(
+            f"# {day_title}: {exercise['title']}\n\n- **Date:** {date_str}\n- **Category:** {exercise['category']}\n- **Difficulty:** {exercise['difficulty']}\n\n---\n\n{exercise['readme']}",
+            encoding="utf-8"
+        )
+        (day_dir / "solution.py").write_text(
+            exercise["solution_scaffold"].strip() + "\n",
+            encoding="utf-8"
+        )
+        (day_dir / "test_solution.py").write_text(
+            exercise["test_code"].strip() + "\n",
+            encoding="utf-8"
+        )
+        run_git_command(["add", str(day_dir)], repo_dir, logger)
+        run_git_command(["commit", "-m", f"feat({day_tag}): scaffold {exercise['title']} challenge and test suite"], repo_dir, logger)
+        logger.info(f"[1/2] Commit: feat({day_tag}): scaffold {exercise['title']} challenge and test suite")
+
+        # 2. Second commit: update progress table and practice log
+        append_to_root_readme(day_title, date_str, exercise["category"], exercise["title"])
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        with open(LOG_FILE, "a", encoding="utf-8") as f:
+            f.write(f"[{timestamp}] [INFO] Scaffolded {day_title}: {exercise['title']} ({exercise['category']})\n")
+        run_git_command(["add", str(README_FILE), str(LOG_FILE)], repo_dir, logger)
+        run_git_command(["commit", "-m", f"docs(index): register {day_title} ({exercise['title']}) for {date_str}"], repo_dir, logger)
+        logger.info(f"[2/2] Commit: docs(index): register {day_title} ({exercise['title']}) for {date_str}")
+        logger.info(f"Generated 2 commits for {day_title} (Small run).")
+        return
 
     commit_actions = [
         # 1. Initialize day folder & specification
@@ -337,10 +367,12 @@ def main():
     parser.add_argument("--force", action="store_true", help="Force generation even if today's challenge already exists")
     parser.add_argument("--dry-run", action="store_true", help="Generate files without git commit or push")
     parser.add_argument("--day", type=int, default=None, help="Force a specific day number")
+    parser.add_argument("--commits", type=int, default=None, help="Number of commits to generate (e.g. 2 for small run, 11 for dark green)")
     args = parser.parse_args()
 
     logger = setup_logger()
     config = load_config()
+    target_commits = args.commits or config.get("target_daily_commits", 11)
     repo_dir = Path(config.get("repo_path", BASE_DIR))
     repo_dir.mkdir(parents=True, exist_ok=True)
 
@@ -383,8 +415,8 @@ def main():
         logger.info("[DRY-RUN] Files created successfully. Skipping git commit and push.")
         return 0
 
-    # Execute multi-commit flow (guarantees Dark Green 10+ commits)
-    execute_multi_commit_flow(day_num, exercise, today_str, repo_dir, config, logger)
+    # Execute commit flow (e.g. 2 for small run, 11 for Dark Green)
+    execute_multi_commit_flow(day_num, exercise, today_str, repo_dir, config, logger, target_commits=target_commits)
 
     # Git Push automatically
     if config.get("auto_push", True):
