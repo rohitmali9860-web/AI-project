@@ -66,3 +66,4 @@ Or double-click `run_daily.bat`.
 | [Day 010](day010/) | 2026-08-24 | OOP Practice | Bank Account & Transaction Engine (OOP) | 🟡 Scaffolded |
 | [Day 011](day011/) | 2026-08-25 | GS1 / Barcode Utilities | GS1 Application Identifier (AI) Barcode Parser | 🟡 Scaffolded |
 | [Day 012](day012/) | 2026-08-26 | Flask Mini-Features | Flask Auth & Sliding-Window Rate Limiter Decorators | 🟡 Scaffolded |
+| [Day 013](day013/) | 2026-08-27 | File & Data Handling | Atomic Safe File Writer & Backup Manager | 🟡 Scaffolded |
