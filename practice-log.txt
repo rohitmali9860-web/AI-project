@@ -471,3 +471,4 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.. Will
 [2026-08-30 23:56:10] [INFO] Extra-dark step 31/36: docs(changelog): document feature additions for milestone Day 016
 [2026-08-30 23:56:10] [INFO] Extra-dark step 32/36: test(teardown): ensure clean filesystem state after test execution
 [2026-08-30 23:56:11] [INFO] Extra-dark step 33/36: types(protocols): define runtime-checkable protocols for data sources
+[2026-08-30 23:56:11] [INFO] Extra-dark step 34/36: feat(cli): enhance command-line argument help descriptions
