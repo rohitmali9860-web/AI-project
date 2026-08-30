@@ -454,3 +454,4 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.. Will
 [2026-08-30 23:56:06] [INFO] Extra-dark step 14/36: test(mock): add mock isolation fixtures for network calls
 [2026-08-30 23:56:06] [INFO] Extra-dark step 15/36: refactor(clean): remove redundant intermediate variables
 [2026-08-30 23:56:06] [INFO] Extra-dark step 16/36: docs(contributing): add guidelines for adding new exercises to bank
+[2026-08-30 23:56:06] [INFO] Extra-dark step 17/36: test(regression): add regression test suite for previous releases
