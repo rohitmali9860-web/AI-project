@@ -467,3 +467,4 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.. Will
 [2026-08-30 23:56:09] [INFO] Extra-dark step 27/36: docs(badges): update CI status badges in documentation
 [2026-08-30 23:56:09] [INFO] Extra-dark step 28/36: log(perf): log microsecond benchmark metrics for today's run
 [2026-08-30 23:56:09] [INFO] Extra-dark step 29/36: test(validation): validate schema contracts across exercise bank
+[2026-08-30 23:56:10] [INFO] Extra-dark step 30/36: refactor(modular): decouple log formatting logic from runner
