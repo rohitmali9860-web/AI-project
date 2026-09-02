@@ -72,3 +72,4 @@ Or double-click `run_daily.bat`.
 | [Day 016](day016/) | 2026-08-30 | Algorithms & Data Structures | Trie (Prefix Tree) for Fast Autocomplete | 🟡 Scaffolded |
 | [Day 017](day017/) | 2026-08-31 | GS1 / Barcode Utilities | EAN-13 & UPC-A Check Digit Calculator | 🟡 Scaffolded |
 | [Day 018](day018/) | 2026-09-01 | OOP Practice | Bank Account & Transaction Engine (OOP) | 🟡 Scaffolded |
+| [Day 019](day019/) | 2026-09-02 | GS1 / Barcode Utilities | GS1 Application Identifier (AI) Barcode Parser | 🟡 Scaffolded |
