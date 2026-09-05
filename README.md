@@ -75,3 +75,4 @@ Or double-click `run_daily.bat`.
 | [Day 019](day019/) | 2026-09-02 | GS1 / Barcode Utilities | GS1 Application Identifier (AI) Barcode Parser | 🟡 Scaffolded |
 | [Day 020](day020/) | 2026-09-03 | Flask Mini-Features | Flask Auth & Sliding-Window Rate Limiter Decorators | 🟡 Scaffolded |
 | [Day 021](day021/) | 2026-09-04 | File & Data Handling | Atomic Safe File Writer & Backup Manager | 🟡 Scaffolded |
+| [Day 022](day022/) | 2026-09-05 | Algorithms & Data Structures | LRU (Least Recently Used) Cache Implementation | 🟡 Scaffolded |
