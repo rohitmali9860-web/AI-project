@@ -81,3 +81,4 @@ Or double-click `run_daily.bat`.
 | [Day 025](day025/) | 2026-09-08 | GS1 / Barcode Utilities | EAN-13 & UPC-A Check Digit Calculator | 🟡 Scaffolded |
 | [Day 026](day026/) | 2026-09-09 | OOP Practice | Bank Account & Transaction Engine (OOP) | 🟡 Scaffolded |
 | [Day 027](day027/) | 2026-09-10 | GS1 / Barcode Utilities | GS1 Application Identifier (AI) Barcode Parser | 🟡 Scaffolded |
+| [Day 028](day028/) | 2026-09-11 | Flask Mini-Features | Flask Auth & Sliding-Window Rate Limiter Decorators | 🟡 Scaffolded |
