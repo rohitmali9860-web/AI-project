@@ -84,3 +84,4 @@ Or double-click `run_daily.bat`.
 | [Day 028](day028/) | 2026-09-11 | Flask Mini-Features | Flask Auth & Sliding-Window Rate Limiter Decorators | 🟡 Scaffolded |
 | [Day 029](day029/) | 2026-09-12 | File & Data Handling | Atomic Safe File Writer & Backup Manager | 🟡 Scaffolded |
 | [Day 030](day030/) | 2026-09-14 | Algorithms & Data Structures | LRU (Least Recently Used) Cache Implementation | 🟡 Scaffolded |
+| [Day 031](day031/) | 2026-09-15 | GS1 / Barcode Utilities | Code 128 Modulo-103 Checksum Calculator | 🟡 Scaffolded |
