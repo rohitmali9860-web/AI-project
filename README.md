@@ -102,3 +102,4 @@ Or double-click `run_daily.bat`.
 | [Day 046](day046/) | 2026-11-07 | Algorithms & Data Structures | LRU (Least Recently Used) Cache Implementation | 🟡 Scaffolded |
 | [Day 047](day047/) | 2026-11-10 | GS1 / Barcode Utilities | Code 128 Modulo-103 Checksum Calculator | 🟡 Scaffolded |
 | [Day 048](day048/) | 2026-11-16 | Algorithms & Data Structures | Trie (Prefix Tree) for Fast Autocomplete | 🟡 Scaffolded |
+| [Day 049](day049/) | 2026-11-17 | GS1 / Barcode Utilities | EAN-13 & UPC-A Check Digit Calculator | 🟡 Scaffolded |
